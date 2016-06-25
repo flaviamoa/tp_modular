@@ -1,0 +1,52 @@
+package FazConcertos;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Flavia
+ */
+public class OrdemDeServico {
+    
+    public int idOrdem;
+    public String tipoProfissional;
+    public String descricaoServico;
+    
+    public OrdemDeServico(){
+        this.idOrdem = -1;
+        this.tipoProfissional = "";
+        this.descricaoServico = "";
+    }
+    public OrdemDeServico(int idOrd, String tipoProf, String descServ){
+        this.idOrdem = idOrd;
+        this.tipoProfissional = tipoProf;
+        this.descricaoServico = descServ;
+    }
+    
+    public void setIdOrdem(int id){
+        this.idOrdem = id;
+    }
+    
+    public int getIdOrdem(){
+        return this.idOrdem;
+    }
+    
+    public void setTipoProfissional(String tipo){
+        this.tipoProfissional = tipo;
+    }
+    public String getTipoProfissional(){
+        return this.tipoProfissional;
+    }
+    
+    public void setDescricaoServico(String descricao){
+        this.tipoProfissional = descricao;
+    }
+    public String getDescricaoServico(){
+        return this.descricaoServico;
+    }
+    
+}
